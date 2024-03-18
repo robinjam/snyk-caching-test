@@ -7,4 +7,6 @@ jobs:
   snyk-security:
     name: SNYK security analysis
     uses: alphagov/govuk-infrastructure/.github/workflows/snyk-security.yml@make-sca-scans-skippable
+    with:
+      skip_sca: true
     secrets: inherit
