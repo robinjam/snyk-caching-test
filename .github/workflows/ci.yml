@@ -1,0 +1,10 @@
+name: CI
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  snyk-security:
+    name: SNYK security analysis
+    uses: alphagov/govuk-infrastructure/.github/workflows/snyk-security.yml@cache-snyk-binaries
+    secrets: inherit
